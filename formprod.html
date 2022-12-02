@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Cadastro de Serviços</title>
+		
+		<style>
+			
+			#formulario{
+				text-align: left;
+				margin: 0;
+				font-family: Tahoma;
+			}
+			
+			.direita{
+				float: right;
+				width: 50%;
+			}
+			
+			.esquerda{
+				float: left;
+				width: 50%;
+			}
+			
+			#formulario label{
+				line-height:30px;
+				text-align: left;
+				color: #363636;
+			}
+			
+			#formulario input{
+				padding: 9px;
+				border: 1px solid #CCCCCC;
+				background: #E8EFE4;
+				border-radius: 4px;
+				color: #363636;
+			}
+			
+			#formulario .botao{
+				background-color: #45543D;
+				color: #FFF;
+			}
+			
+			#formulario .botao:hover{
+				background-color: #354030;
+			}
+			
+			
+			
+			
+		</style>
+		
+		
+	</head>
+	
+	<body>
+		<center><h1> Cadastro de Serviços </h1></center>
+		<hr>
+		
+		<div id="formulario">
+			
+			<form action="salvarprod.php" method = "post">
+			    <div class="esquerda">
+					<label for="nome"> Nome: </label><br>
+                    <input type="text" name="nome" size="35">
+				</div>
+				
+                <div class="direita">
+					<label for="data"> Data de validade: </label><br>
+					<input type="date" name="data" size="25">
+				</div>
+				
+				<div class="esquerda">
+					<label for="tipo"> Tipo: </label><br>
+                    <input type="text" name="tipo" size="35">
+				</div>
+				
+				<div class="direita">
+					<label for="valor">Valor: </label><br>
+					<input type="number" name="valor" size="35" >
+				</div>
+				<div class="esquerda">
+					<label for="especie">Especie: </label><br>
+                    <input type="text" name="especie" size="35">
+				</div>
+				<div class="direita">
+					<label for="fornecedor">Fornecedor: </label><br>
+					<input type="text" name="fornecedor" size="35" >
+				</div>
+				<div class="esquerda">
+					<label for="obs">Observações:</label><br>
+                    <input type="text" name="obs" size="35">
+				</div>
+				<div class="direita">
+					<label for="telefone">Telefone: </label><br>
+					<input type="tel" name="telefone" size="35" >
+				</div>
+				<br>
+                <br><br>
+				<br>
+			    <br>
+				<br>
+			    <br>
+				
+			    
+				
+				<input type="submit" value = "Cadastrar" class="botao" style="margin-top: 20px">
+				<input type="reset" value = "Limpar" class="botao">
+				
+				
+				
+			</form>
+			
+		</div>
+	
+	</body>
+</html>
+
